@@ -1,12 +1,12 @@
-<div class = "adminScreen">
- <!--   <span>Registierung: </span>
-    <hr/>
-   <input type="text" pInputText [(ngModel)]="username"/>
-    <hr/>
+<div class = "admin-screen">
+    <span>Registierung: </span>
     <span>neuer User: </span>
     <hr/>
-    <input type="password" pInputText [(ngModel)]="password"/>
+    <input type="text" pInputText [(ngModel)]="newUsername"/>
     <hr/>
-    <button pButton type="button" label="Registrieren" (click)=>"register()"</button> -->
+    <hr/>
+    <input type="password" pInputText [(ngModel)]="newPassword"/>
+    <hr/>
+    <button pButton type="button" label="Registrieren" (click)="register()"></button>
     <hr/>
 </div>
