@@ -7,13 +7,15 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { AuthService } from './services/auth.service';
 import { FormsModule } from '@angular/forms';
+import { AdminScreenComponent } from './admin-screen/admin-screen.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    AdminScreenComponent
   ],
   imports: [
     BrowserModule,
