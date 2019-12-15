@@ -29,4 +29,7 @@ export class AdminScreenComponent {
       alert("Dieser Benutzername ist verfügbar")
     }
   }
+  backToMain(): void{
+    
+  }
 }
