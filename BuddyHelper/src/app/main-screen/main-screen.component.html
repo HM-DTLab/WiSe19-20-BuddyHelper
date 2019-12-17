@@ -1,16 +1,16 @@
 <div>
     <button class="emergencybutton">Notruf</button>
 </div>
-<div><body>
-    <p class="infotext">"Notruf" klicken, um einen Notruf abzusetzen.</p>
-    <p class="infotext">"Messages" klicken, um Nachrichten zu lesen und zu verfassen.</p>
-    <p class="infotext">"Kontakte" klicken, um Kontakte zu verwalten.</p>
-    <p class="infotext">"Termine" klicken, um Termine zu verwalten.</p>
-    <p class="infotext">"Logout" klicken, um sich auszuloggen.</p>
+<div><body class="infotext">
+    <p>"Notruf" klicken, um einen Notruf abzusetzen.</p>
+    <p>"Messages" klicken, um Nachrichten zu lesen und zu verfassen.</p>
+    <p>"Kontakte" klicken, um Kontakte zu verwalten.</p>
+    <p>"Termine" klicken, um Termine zu verwalten.</p>
+    <p>"Logout" klicken, um sich auszuloggen.</p>
 </body></div>
 <div style="vertical-align: bottom;">
     <button class="button">Messages</button>
     <button class="button">Kontakte</button>
     <button class="button">Termine</button>
-    <button class="logoutbutton">Logout</button>
+    <button class="logoutbutton" (click)="logout()">Logout</button>
 </div>
