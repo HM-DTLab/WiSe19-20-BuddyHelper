@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { User } from '../example/user.example';
 import { AuthService } from '../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,7 @@ export class LoginComponent {
   protected username: string;
   protected password: string;
 
-  constructor(private authService: AuthService){
+  constructor(private authService: AuthService, private router: Router){
 
   }
 
@@ -23,8 +24,8 @@ export class LoginComponent {
     }
     this.authService.login(user).then((result:boolean)=>{
       if(result){
-        //  this.router.navigate(['main']);
-        alert("Ihre Anmeldung war Erfolgreich!");
+          this.router.navigate(['main-screen']);
+        //alert("Ihre Anmeldung war Erfolgreich!");
       }else{
         alert("Der Benutzername oder das Kennwort ist falsch.");
       }

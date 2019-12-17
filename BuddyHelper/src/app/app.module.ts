@@ -8,6 +8,7 @@ import { ButtonModule } from 'primeng/button';
 import { AuthService } from './services/auth.service';
 import { FormsModule } from '@angular/forms';
 import { AdminScreenComponent } from './admin-screen/admin-screen.component';
+import { MainScreenComponent } from './main-screen/main-screen.component';
 
 
 
@@ -15,7 +16,8 @@ import { AdminScreenComponent } from './admin-screen/admin-screen.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    AdminScreenComponent
+    AdminScreenComponent,
+    MainScreenComponent
   ],
   imports: [
     BrowserModule,

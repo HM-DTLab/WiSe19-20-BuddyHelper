@@ -22,6 +22,7 @@
     "amazon-cognito-identity-js": "^3.2.0",
     "aws-amplify": "^2.2.0",
     "aws-amplify-angular": "^4.1.1",
+    "primeicons": "^2.0.0",
     "primeng": "^9.0.0-rc.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
