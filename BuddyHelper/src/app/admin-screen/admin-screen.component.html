@@ -1,16 +1,17 @@
 <div class = "admin-screen">
     <span>Registrierung: </span>
+    <hr/>
     <span>neuer User: </span>
     <hr/>
     <input type="text" pInputText [(ngModel)]="newUsername"/>
     <hr/>
+    <span>Passwort: </span>
     <hr/>
     <input type="password" pInputText [(ngModel)]="newPassword"/>
     <hr/>
-    <button pButton type="button" label="Registrieren" (click)="register()"></button>
-    <hr/>
-    <hr>
-    <button pButton type="button" label="zur Hauptseite" (click)="backToMain()">
-    </button>
-    <hr/>
+    <div style="text-align: center;">
+        <button pButton class="button" style="width: 40%;" label="Registrieren" (click)="register()"></button>
+        <button pButton class="button" style="width: 40%" label="zur Hauptseite" (click)="backToMain()">
+        </button>
+    </div>
 </div>

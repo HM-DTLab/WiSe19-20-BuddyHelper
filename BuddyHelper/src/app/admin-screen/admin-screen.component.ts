@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../example/user.example';
 import { USER } from '../data/user.data';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-admin-screen',
   templateUrl: './admin-screen.component.html',
@@ -14,7 +15,7 @@ export class AdminScreenComponent {
   //wer diese Person ist.
   private newPersonalCardNumber : string;
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   register(): void{
@@ -30,6 +31,6 @@ export class AdminScreenComponent {
     }
   }
   backToMain(): void{
-    
+    this.router.navigate(['main-screen']);
   }
 }

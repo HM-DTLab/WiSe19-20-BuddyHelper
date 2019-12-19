@@ -24,7 +24,7 @@ export class LoginComponent {
     }
     this.authService.login(user).then((result:boolean)=>{
       if(result){
-          this.router.navigate(['main-screen']);
+          this.router.navigate(['admin-screen']);
         //alert("Ihre Anmeldung war Erfolgreich!");
       }else{
         alert("Der Benutzername oder das Kennwort ist falsch.");
