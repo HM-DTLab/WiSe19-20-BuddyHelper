@@ -1,14 +1,13 @@
-<div class = "main_content">
-    <span>Benutzername: </span>
+<div class = "infotext">
+    <span>E-mail: </span>
     <hr/>
-    <input type="text" pInputText [(ngModel)]="username"/>
+    <input type="email" pInputText validate-email name='email' id='email' ng-trim=false [(ngModel)]="email" required/>
     <hr/>
     <span>Kennwort: </span>
     <hr/>
-    <input type="password" pInputText [(ngModel)]="password"/>
+    <input type="password" pInputText [(ngModel)]="password" />
     <hr/>
-    <button pButton type="button" label="Anmelden" (click)="login()"></button>
+    <button pButton type="button" label="Anmelden" class="loginButton" (click)="login()"></button>
     <hr/>
 </div>
 
-  

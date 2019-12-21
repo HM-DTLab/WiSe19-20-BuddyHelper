@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../example/user.example';
-import { USER } from '../data/user.data';
+import { USER_1 } from '../data/user.data';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-admin-screen',
@@ -20,10 +20,10 @@ export class AdminScreenComponent {
 
   register(): void{
     let user: User = {
-      username: this.newUsername,
+      email: this.newUsername,
       password: this.newPassword
     }
-    if(user.username == USER.username){
+    if(user.email == USER_1.email){
       alert("Dieser Benutzername ist bereits in verwendung")
     }
     else{

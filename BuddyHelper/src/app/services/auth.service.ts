@@ -1,12 +1,13 @@
 import { Injectable } from "@angular/core";
 import { User } from '../example/user.example';
-import { USER } from '../data/user.data';
+import { USER_Admin, USER_1 } from '../data/user.data';
 
 @Injectable()
 export class AuthService {
     login(user: User): Promise<boolean>{
 
-        if(user.username == USER.username && user.password == USER.password){
+        if((user.email == USER_Admin.email && user.password == USER_Admin.password)||
+        (user.email == USER_1.email && user.password == USER_1.password)){
             return Promise.resolve(true);
         }
         else{

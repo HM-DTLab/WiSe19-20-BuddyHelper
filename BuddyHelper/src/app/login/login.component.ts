@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { User } from '../example/user.example';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
+import { USER_Admin, USER_1 } from '../data/user.data';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
 
-  protected username: string;
+  protected email: string;
   protected password: string;
 
   constructor(private authService: AuthService, private router: Router){
@@ -19,15 +20,23 @@ export class LoginComponent {
 
   public login(): void{
     let user: User = {
-      username: this.username,
+      email: this.email,
       password: this.password
     }
     this.authService.login(user).then((result:boolean)=>{
       if(result){
+        if(this.email == USER_Admin.email){
           this.router.navigate(['admin-screen']);
         //alert("Ihre Anmeldung war Erfolgreich!");
+        }else{
+          this.router.navigate(['main-screen']);
+        }
       }else{
-        alert("Der Benutzername oder das Kennwort ist falsch.");
+         if((this.email.indexOf('@') < 0 )|| (this.email.indexOf('.') < 0)){
+          alert("Bitte tragen Sie gültige E-mail Adresse ein.")
+        }else{
+          alert("Sie haben falsche E-mail Adresse oder falsches Kennwort eingetragen.");
+        }
       }
     })
     }

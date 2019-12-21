@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'main-screen', component: MainScreenComponent},
   {path: 'admin-screen', component: AdminScreenComponent}
-// Wenn der Component für die Main Seite ist verfügbar
+// Wenn der Component für die Main Seite verfügbar ist
 // 'main' und MainComponent mit dem Component Name ändern
 // auch in login.component.ts 'main' mit Component name ersetzen
 ];
