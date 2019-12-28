@@ -53,7 +53,6 @@ visibility: hidden;
     float: left;
     font-size: 24px;
     border-radius: 8px;
-
 }
 
 .infotext {
@@ -61,4 +60,15 @@ visibility: hidden;
     font: 1em sans-serif;
     font-size: 24px;
     text-align: center;
+}
+.backButton {
+    width: 15%;
+    height: 70px;
+    background-color:lightgray;
+    color: white;
+    font: 1em sans-serif;
+    float: right;
+    border-color: lightseagreen;
+    font-size: 18px;
+    border-radius: 8px;
 }
