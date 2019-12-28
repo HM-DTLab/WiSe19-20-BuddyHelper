@@ -30,7 +30,7 @@ export class MainScreenComponent implements OnInit {
   }
 
   toAppointments(): void {
-    //this.router.navigate(['appointments']);
+    this.router.navigate(['appointments']);
 
   }
 

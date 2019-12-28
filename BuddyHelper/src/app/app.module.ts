@@ -9,6 +9,7 @@ import { AuthService } from './services/auth.service';
 import { FormsModule } from '@angular/forms';
 import { AdminScreenComponent } from './admin-screen/admin-screen.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
+import { AppointmentComponent } from './appointment/appointment.component';
 
 
 
@@ -17,7 +18,8 @@ import { MainScreenComponent } from './main-screen/main-screen.component';
     AppComponent,
     LoginComponent,
     AdminScreenComponent,
-    MainScreenComponent
+    MainScreenComponent,
+    AppointmentComponent
   ],
   imports: [
     BrowserModule,
