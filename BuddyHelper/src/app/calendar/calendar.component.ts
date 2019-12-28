@@ -43,23 +43,6 @@ export class CalendarComponent implements AfterViewInit {
     this.dateSelected.emit(this.selectedDate);
   }
 
-  prevDay() {
-    const prevMoment = moment(this.selectedDate).add(-1, 'days');
-    this.selectedDate = prevMoment;
-    this.dateChanged();
-  }
-
-  today() {
-    this.selectedDate = moment();
-    this.dateChanged();
-  }
-
-  nextDay() {
-    const nextMoment = moment(this.selectedDate).add(1, 'days');
-    this.selectedDate = nextMoment;
-    this.dateChanged();
-  }
-
   goBack(): void {
     this.router.navigate(['appointments']);
 
