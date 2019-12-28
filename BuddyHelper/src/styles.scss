@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
 
 .main_content{
     text-align: center;
@@ -62,13 +64,22 @@ visibility: hidden;
     text-align: center;
 }
 .backButton {
-    width: 15%;
-    height: 70px;
+    width: 40%;
+    height: 50px;
     background-color:lightgray;
     color: white;
     font: 1em sans-serif;
-    float: right;
-    border-color: lightseagreen;
+    border-color: purple;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.chooseContacts {
+    width: 15%;
+    height: 50px;
+    background-color:lightslategray;
+    color: white;
+    font: 1em sans-serif;
+    border-color: purple;
     font-size: 18px;
     border-radius: 8px;
 }

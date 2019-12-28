@@ -11,17 +11,24 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~8.2.14",
+    "@angular/animations": "^8.2.14",
+    "@angular/cdk": "^8.2.3",
     "@angular/common": "~8.2.14",
     "@angular/compiler": "~8.2.14",
     "@angular/core": "~8.2.14",
     "@angular/forms": "~8.2.14",
+    "@angular/material": "^8.2.3",
+    "@angular/material-moment-adapter": "^8.2.3",
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "@fullcalendar/angular": "^4.3.1",
+    "@fullcalendar/core": "^4.3.1",
+    "@fullcalendar/daygrid": "^4.3.0",
     "amazon-cognito-identity-js": "^3.2.0",
     "aws-amplify": "^2.2.0",
     "aws-amplify-angular": "^4.1.1",
+    "moment": "^2.24.0",
     "primeicons": "^2.0.0",
     "primeng": "^9.0.0-rc.2",
     "rxjs": "~6.4.0",
@@ -51,7 +58,7 @@
     "typescript": "~3.5.3",
     "webpack": "^4.41.2"
   },
-  "browser": { 
+  "browser": {
     "fs": false,
     "path": false,
     "os": false

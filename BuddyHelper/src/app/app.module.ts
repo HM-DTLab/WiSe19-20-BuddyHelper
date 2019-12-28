@@ -10,8 +10,10 @@ import { FormsModule } from '@angular/forms';
 import { AdminScreenComponent } from './admin-screen/admin-screen.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
 import { AppointmentComponent } from './appointment/appointment.component';
-
-
+import { FullCalendarModule } from '@fullcalendar/angular';
+import { CalendarComponent } from './calendar/calendar.component';
+import { MatDatepickerModule, MatButtonModule  } from '@angular/material'
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
 
 @NgModule({
   declarations: [
@@ -19,14 +21,19 @@ import { AppointmentComponent } from './appointment/appointment.component';
     LoginComponent,
     AdminScreenComponent,
     MainScreenComponent,
-    AppointmentComponent
+    AppointmentComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
     InputTextModule,
     ButtonModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FullCalendarModule,
+    MatDatepickerModule,
+    MatMomentDateModule,
+    MatButtonModule 
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

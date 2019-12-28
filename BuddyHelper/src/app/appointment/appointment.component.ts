@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Route } from '@angular/compiler/src/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -15,7 +14,9 @@ export class AppointmentComponent implements OnInit {
   }
   toMain(): void {
     this.router.navigate(['main-screen']); //bringt einen schritt zurück zur Main-Screen
-
+  }
+  toCalendar(): void {
+    this.router.navigate(['calendar']); //bringt einen schritt zurück zur Main-Screen
   }
 
 }

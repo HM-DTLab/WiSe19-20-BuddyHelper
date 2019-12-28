@@ -28,9 +28,11 @@ export class MainScreenComponent implements OnInit {
     //this.router.navigate(['contacts']);
 
   }
-
   toAppointments(): void {
     this.router.navigate(['appointments']);
+  }
+  goBack(): void {
+    this.router.navigate(['appointment']);
 
   }
 
