@@ -1,0 +1,8 @@
+{"users":
+    [{"email": "admin@gmx.de" ,"name":"admin","password":"admin"},
+    {"email": "d.meier@gmx.de", "name":"Dieter Meier","password":"net1"},
+    {"email": "h.zimmer@gmx.de", "name":"Hans Zimmer","password":"net2"},
+    {"email": "m.schober@gmx.de", "name":"Michael Schober","password":"net3"},
+    {"email": "l.overload@gmail.de", "name":"Lord Overload","password":"net4"},
+    {"email": "m.mustermann@gmail.de", "name":"Max Mustermann","password":"net5"}]
+}

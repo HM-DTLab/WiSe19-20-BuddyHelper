@@ -2,7 +2,10 @@ import { Component } from '@angular/core';
 import { User } from '../example/user.example';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
-import { USER_Admin, USER_1 } from '../data/user.data';
+
+import UserList from '../data/UserList.json'; 
+//import { USER_Admin, USER_1 } from '../data/user.data';
+
 
 @Component({
   selector: 'app-login',
@@ -25,7 +28,7 @@ export class LoginComponent {
     }
     this.authService.login(user).then((result:boolean)=>{
       if(result){
-        if(this.email == USER_Admin.email){
+        if(this.email == UserList.users[0].email){
           this.router.navigate(['admin-screen']);
         //alert("Ihre Anmeldung war Erfolgreich!");
         }else{
@@ -40,6 +43,4 @@ export class LoginComponent {
       }
     })
     }
-
-
 }

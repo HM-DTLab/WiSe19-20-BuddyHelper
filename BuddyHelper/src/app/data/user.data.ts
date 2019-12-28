@@ -1,3 +1,5 @@
+//Dummy daten, werden nicht mehr gebraucht
+
 import { User } from '../example/user.example';
 
 export const USER_Admin: User = {
