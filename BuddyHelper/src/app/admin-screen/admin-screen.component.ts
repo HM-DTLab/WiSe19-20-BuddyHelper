@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { User } from '../example/user.example';
 import { USER_1 } from '../data/user.data';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-admin-screen',
   templateUrl: './admin-screen.component.html',
@@ -9,8 +10,10 @@ import { Router } from '@angular/router';
 })
 export class AdminScreenComponent {
 
-  protected newUsername : string;
+  protected email : string;
   protected newPassword : string;
+  protected name : string;
+  protected surname : string;
   //Oder z.b Krankenkarte nummer etc. Zur indentifizierung
   //wer diese Person ist.
   private newPersonalCardNumber : string;
@@ -20,8 +23,9 @@ export class AdminScreenComponent {
 
   register(): void{
     let user: User = {
-      email: this.newUsername,
+      email: this.email,
       password: this.newPassword
+    
     }
     if(user.email == USER_1.email){
       alert("Dieser Benutzername ist bereits in verwendung")

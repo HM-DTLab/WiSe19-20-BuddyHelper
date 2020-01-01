@@ -1,16 +1,18 @@
-<div>
-    <button class="emergencybutton">Notruf</button>
-</div>
-<div><body class="infotext">
-    <p>Bitte tragen Sie den gewünschen Datum für Ihr Termin hier ein.</p> 
-    <button class="chooseContacts" (click)="toCalendar()">Termin wählen </button> 
-    <p>Wem möchten Sie einladen?</p>
-    <button class="chooseContacts">Kontakte wählen</button>    
-</body></div>
-
-<div style="vertical-align: bottom;">
-    <button class="button">Messages</button>
-    <button class="button">Kontakte</button>
-    <button class="button" (click) = "toAppointments()">Termine</button>
-    <button class="logoutbutton" (click)="toMain()">Home</button>
-</div>
+<div class = "standard">
+    <button mat-raised-button class="emergencybutton">Hilfe anfordern</button>
+<form>
+    <hr>
+    Wählen Sie einen Termin aus
+    <button mat-raised-button class="button" (click)="toCalendar()">Termin wählen</button>
+    <p></p>
+    Wen möchten Sie einladen?
+    <button mat-raised-button class="button">Kontakte wählen</button>
+    <hr>
+    <textarea mat-form-field cols="40" placeholder="Weitere Infos/Einladungsnachricht"></textarea>
+    <hr>
+    <button mat-raised-button class="button">Senden</button>
+    <hr>
+    <button mat-raised-button class = "buttonBar">Messages</button>
+    <button mat-raised-button class = "buttonBar">Kontakte</button>
+    <button mat-raised-button class = "buttonBar" (click) ="toMain()">Home</button>
+</form>

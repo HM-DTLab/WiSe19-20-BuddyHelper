@@ -2,6 +2,7 @@
 @import '~@fullcalendar/core/main.css';
 @import '~@fullcalendar/daygrid/main.css';
 
+
 .main_content{
     text-align: center;
     font-size: 25px;
@@ -12,7 +13,7 @@ height: 0px;
 visibility: hidden;
 }
 .loginButton {
-    width: 10%;
+    width: 20%;
     height: 50px;
     background-color: greenyellow;
     font: 1em sans-serif;
@@ -35,9 +36,9 @@ visibility: hidden;
 }
 
 .button {
-    width: 30%;
+    width: 25%;
     height: 100px;
-    background-color:purple;
+    background-color:blue;
     color: white;
     font: 1em sans-serif;
     float: left;
@@ -45,11 +46,21 @@ visibility: hidden;
     font-size: 24px;
     border-radius: 8px;
 }
-
-.logoutbutton {
-    width: 10%;
+.messagebutton{
+    width: 30%;
     height: 100px;
-    background-color: white;
+    background-color:blue;
+    color: white;
+    font: 1em sans-serif;
+    float: left;
+    border-color: lightgrey;
+    font-size: 24px;
+    border-radius: 8px;
+}  
+.logoutbutton {
+    width: 20%;
+    height: 100px;
+    background-color: blue;
     font: 1em sans-serif;
     color: black;
     float: left;
@@ -64,17 +75,17 @@ visibility: hidden;
     text-align: center;
 }
 .backButton {
-    width: 40%;
+    width: 80%;
     height: 50px;
     background-color:lightgray;
     color: white;
     font: 1em sans-serif;
-    border-color: purple;
+    border-color: blue;
     font-size: 18px;
     border-radius: 8px;
 }
 .chooseContacts {
-    width: 15%;
+    width: 20%;
     height: 50px;
     background-color:lightslategray;
     color: white;
@@ -83,3 +94,5 @@ visibility: hidden;
     font-size: 18px;
     border-radius: 8px;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

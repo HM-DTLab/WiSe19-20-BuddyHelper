@@ -14,6 +14,14 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import { CalendarComponent } from './calendar/calendar.component';
 import { MatDatepickerModule, MatButtonModule  } from '@angular/material'
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -33,7 +41,16 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
     FullCalendarModule,
     MatDatepickerModule,
     MatMomentDateModule,
-    MatButtonModule 
+    MatButtonModule,
+    MatInputModule,
+    NoopAnimationsModule, 
+    MatCheckboxModule,
+    MatListModule,
+    MatMenuModule,
+    MatIconModule,
+    MatSelectModule,
+    MatProgressBarModule
+
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

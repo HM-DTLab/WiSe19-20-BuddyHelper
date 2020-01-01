@@ -1,17 +1,29 @@
-<div class = "admin-screen">
-    <span>Registrierung: </span>
-    <hr/>
-    <span>neuer User: </span>
-    <hr/>
-    <input type="text" pInputText [(ngModel)]="newUsername"/>
-    <hr/>
-    <span>Passwort: </span>
-    <hr/>
-    <input type="password" pInputText [(ngModel)]="newPassword"/>
-    <hr/>
-    <div style="text-align: center;">
-        <button pButton class="button" style="width: 40%;" label="Registrieren" (click)="register()"></button>
-        <button pButton class="button" style="width: 40%" label="zur Hauptseite" (click)="backToMain()">
-        </button>
-    </div>
+<div class = "standard">
+    <header>Registrierung</header>
+    <form>
+        <mat-form-field class="inputField">
+            <input matInput placeholder="Vorname" name='name' [ngModel]="name" required/>
+        </mat-form-field>
+
+        <mat-form-field class="inputField">
+            <input matInput placeholder="Nachname" name='surname' [ngModel]="surname" required/>
+        </mat-form-field>
+
+        <mat-form-field class= "inputField">
+            <input matInput placeholder="Email" name='email' [ngModel]="email" required/>
+        </mat-form-field>
+
+        <mat-form-field class = "inputField">
+            <input matInput placeholder="Passwort" type = "password" name='newPassword' [ngModel] = "newPassword" (keydown.enter)="register()" required/>
+        </mat-form-field>
+
+        <mat-checkbox class ="checkBox">
+                Er/Sie akzeptieren die "End User License Agreement"
+        </mat-checkbox>
+
+        <hr>
+        <button mat-raised-button class = "button" (click)= "register()">Registrieren</button>
+        <button mat-raised-button class = "button" (click)="backToMain()">zur Hauptseite</button>
+    </form>
+
 </div>

@@ -1,0 +1,116 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+
+
+@include mat-core();
+
+$my-theme-primary: mat-palette($mat-indigo);
+$my-theme-accent: mat-palette($mat-blue,A600,A100,A700);
+$my-theme-warn: mat-palette($mat-red,A400,A300,A900);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$my-theme: mat-dark-theme($my-theme-primary, $my-theme-accent, $my-theme-warn);
+
+@include angular-material-theme($my-theme);
+
+
+//Layoutklassen
+header {margin-top: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    color : white;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+::ng-deep .mat-form-field{
+    color: green;
+}
+.mat-form-field-empty.mat-form-field-label{
+    color: black;
+}
+.mat-form-field-underline{
+    color: black;
+    background-color: black;
+}
+.mat-form-field.mat-form-field-empty.mat-form-field-underline{
+    color: black;
+}
+
+.standard {
+    display : flex;
+    flex-direction: column;
+    background-color: rgb(110, 120, 255);
+    font-size: 25px;
+    margin-top: 5px;
+    align-self: center;
+
+    .inputField{
+        margin-bottom: 5x;
+        align-self: center;
+        color: black;
+      
+    }
+    .subMessage{
+        align-self: center;
+        font-size: medium;
+    }
+    .button{
+        width: 40%;
+        height: 40px;
+        align-self: center;
+        font: 1em sans-serif;
+        background-color: blue;
+        font-size: 20px;
+        border-radius: 20px;
+        border-color: darkgrey;
+        border-style: solid;
+        border-width: 2px;
+    }
+    .emergencybutton {
+        width: 100%;
+        height: 60px;
+        vertical-align: top;
+        background-color: rgb(122, 16, 16);
+        font: 1em sans-serif;
+        font-size: 30px;
+        border-radius: 20px;
+        border-color: darkgrey;
+        border-style: solid;
+        border-width: 2px;
+    }
+    .checkBox{
+        font-size: medium;
+    }
+    hr{
+        height: 0px;
+        background-color: cornflowerblue;
+        visibility: hidden;
+    }
+    .infoBox{
+        align-self: left;
+        font-size: medium;
+        color: black;
+    }
+    .buttonBar{
+        width: 27%;
+        height: 30px;
+        align-self: center;
+        font: 1em sans-serif;
+        background-color: blue;
+        font-size: 20px;
+        border-radius: 20px;
+        border-color: darkgrey;
+        border-style: solid;
+        border-width: 2px;
+    }
+    .menu{
+        color: black;
+        font: 1em sans-serif;
+        border-color: lightgrey;
+        font-size: 30px;
+        border-radius: 8px;
+    }
+}
+    

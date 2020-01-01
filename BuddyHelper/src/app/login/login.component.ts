@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, SystemJsNgModuleLoader, Input, SimpleChange, SimpleChanges } from '@angular/core';
 import { User } from '../example/user.example';
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
@@ -14,18 +14,20 @@ import UserList from '../data/UserList.json';
 })
 export class LoginComponent {
 
-  protected email: string;
-  protected password: string;
+  @Input() email: string;
+  @Input() password: string;
 
   constructor(private authService: AuthService, private router: Router){
 
   }
-
+  
   public login(): void{
     let user: User = {
       email: this.email,
       password: this.password
+      
     }
+
     this.authService.login(user).then((result:boolean)=>{
       if(result){
         if(this.email == UserList.users[0].email){
@@ -43,4 +45,10 @@ export class LoginComponent {
       }
     })
     }
+    ngOnChanges(changes: SimpleChanges) {
+      if(changes['this.password'])
+    {
+      this.password = changes['this.password'].currentValue;
+
+    }}
 }

@@ -1,16 +1,25 @@
-<div>
-    <button class="emergencybutton">Notruf</button>
-</div>
-<div><body class="infotext">
-    <p>"Notruf" klicken, um einen Notruf abzusetzen.</p>
-    <p>"Messages" klicken, um Nachrichten zu lesen und zu verfassen.</p>
-    <p>"Kontakte" klicken, um Kontakte zu verwalten.</p>
-    <p>"Termine" klicken, um Termine zu verwalten.</p>
-    <p>"Logout" klicken, um sich auszuloggen.</p>
-</body></div>
-<div style="vertical-align: bottom;">
-    <button class="button">Messages</button>
-    <button class="button">Kontakte</button>
-    <button class="button" (click) = "toAppointments()">Termine</button>
-    <button class="logoutbutton" (click)="logout()">Logout</button>
+<div class = "standard">
+    <form>
+        <button mat-raised-button class="emergencybutton">Hilfe anfordern</button>
+        <mat-list class = "infoBox">
+            <mat-list-item class = "infoBox">"Hilfe anfordern" klicken, um den Notfallkontakt zu benachrichtigen.</mat-list-item>
+            <mat-list-item class = "infoBox">"Messages" klicken, um Nachrichten zu lesen und zu verfassen.</mat-list-item>                <mat-list-item class = "infoBox">"Kontakte" klicken, um Kontakte zu verwalten.</mat-list-item>
+            <mat-list-item class = "infoBox">"Termine" klicken, um Termine zu verwalten.</mat-list-item>
+             <mat-list-item class = "infoBox">"Menü" klicken, um sich abzumelden oder einstellungen zu ändern.</mat-list-item>
+        </mat-list>
+
+        <hr>
+        <mat-menu #appMenu="matMenu">
+            <button mat-menu-item>Settings</button>
+            <button mat-menu-item (click)="logout()">logout</button>
+        </mat-menu>
+        
+        <button mat-raised-button class = "buttonBar">Messages</button>
+        <button mat-raised-button class = "buttonBar">Kontakte</button>
+        <button mat-raised-button class = "buttonBar" (click)="toAppointments()">Termine</button>
+
+        <button mat-icon-button class = "menu" [matMenuTriggerFor]="appMenu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+    </form>
 </div>
