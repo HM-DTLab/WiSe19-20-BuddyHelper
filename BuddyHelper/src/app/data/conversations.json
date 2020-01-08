@@ -1,0 +1,12 @@
+{
+    "participants" : {"c1":
+        {"Dieter Meier" : "p1", "Lord Overload":"p2"}
+    },
+    "messages" : {"c1" : 
+        {
+            "m1":{"p1":"bla"},
+            "m2":{"p2":"bla"},
+            "m3":{"p1":"Schön, dass wir darüber geredet haben"}
+        }
+    }
+}

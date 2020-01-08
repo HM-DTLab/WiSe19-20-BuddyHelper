@@ -7,6 +7,7 @@ import { AppointmentComponent } from './appointment/appointment.component';
 import {CalendarComponent} from './calendar/calendar.component';
 import { AppointmentContactComponent } from './appointment-contact/appointment-contact.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { MessagerComponent } from './messager/messager.component';
 
 
 
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'admin-screen', component: AdminScreenComponent},
   {path: 'appointments', component: AppointmentComponent},
   {path: 'calendar', component: CalendarComponent},
+  {path: 'messager', component: MessagerComponent},
   {path: 'contacts', component: ContactsComponent}
 ];
 

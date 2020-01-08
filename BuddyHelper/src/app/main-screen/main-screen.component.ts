@@ -20,7 +20,7 @@ export class MainScreenComponent implements OnInit {
 
   // Methodenstubs für weiteres Routing zu anderen Komponenten
   toMessages(): void {
-    //this.router.navigate(['messager']);
+    this.router.navigate(['messager']);
 
   }
 

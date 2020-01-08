@@ -9,6 +9,7 @@ import { AuthService } from './services/auth.service';
 import { FormsModule } from '@angular/forms';
 import { AdminScreenComponent } from './admin-screen/admin-screen.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
+import { MessagerComponent } from "./messager/messager.component";
 import { AppointmentComponent } from './appointment/appointment.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { CalendarComponent } from './calendar/calendar.component';
@@ -34,7 +35,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     AppointmentComponent,
     CalendarComponent,
     AppointmentContactComponent,
-    ContactsComponent
+    ContactsComponent,
+    MessagerComponent
   ],
   imports: [
     BrowserModule,

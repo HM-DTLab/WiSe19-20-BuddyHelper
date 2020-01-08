@@ -1,0 +1,33 @@
+<div class = "standard">
+    <form>
+        <button mat-raised-button class="emergencybutton">Hilfe anfordern</button>
+        <!-- <mat-list class = "infoBox">
+            <mat-list-item class = "infoBox">Kontakt 1</mat-list-item>
+            <mat-list-item class = "infoBox">Kontakt 2</mat-list-item>
+            <mat-list-item class = "infoBox">Kontakt 3</mat-list-item>
+            <mat-list-item class = "infoBox">Kontakt 4</mat-list-item>
+            <mat-list-item class = "infoBox">Kontakt 5</mat-list-item>
+        </mat-list> -->
+        <mat-nav-list>
+            <mat-list-item *ngFor="let cnv of getConversations()">
+                <button mat-icon-button (click)="goTo(cnv)">{{cnv}}</button>
+
+            </mat-list-item>
+
+        </mat-nav-list>
+
+        <hr>
+        <mat-menu #appMenu="matMenu">
+            <button mat-menu-item>Settings</button>
+            <button mat-menu-item (click)="logout()">logout</button>
+        </mat-menu>
+        
+        <button mat-raised-button class = "buttonBar" (click)="toMain()">Home</button>
+        <button mat-raised-button class = "buttonBar" (click)="toContacts()">Kontakte</button>
+        <button mat-raised-button class = "buttonBar" (click)=toAppointments()>Termine</button>
+
+        <button mat-icon-button class = "menu" [matMenuTriggerFor]="appMenu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+    </form>
+</div>
