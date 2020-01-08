@@ -16,7 +16,10 @@ export class AppointmentComponent implements OnInit {
     this.router.navigate(['main-screen']); //bringt einen schritt zurück zur Main-Screen
   }
   toCalendar(): void {
-    this.router.navigate(['calendar']); //bringt einen schritt zurück zur Main-Screen
+    this.router.navigate(['calendar']);
   }
+toContacts(): void {
+  this.router.navigate(['appointment-contact']); 
+}
 
 }

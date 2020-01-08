@@ -5,6 +5,7 @@ import { MainScreenComponent } from './main-screen/main-screen.component';
 import { AdminScreenComponent } from './admin-screen/admin-screen.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import {CalendarComponent} from './calendar/calendar.component';
+import { AppointmentContactComponent } from './appointment-contact/appointment-contact.component';
 
 
 
@@ -14,10 +15,8 @@ const routes: Routes = [
   {path: 'main-screen', component: MainScreenComponent},
   {path: 'admin-screen', component: AdminScreenComponent},
   {path: 'appointments', component: AppointmentComponent},
-  {path: 'calendar', component: CalendarComponent}
-// Wenn der Component für die Main Seite verfügbar ist
-// 'main' und MainComponent mit dem Component Name ändern
-// auch in login.component.ts 'main' mit Component name ersetzen
+  {path: 'calendar', component: CalendarComponent},
+  {path: 'appointment-contact', component: AppointmentContactComponent}
 ];
 
 @NgModule({

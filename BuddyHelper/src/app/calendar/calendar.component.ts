@@ -45,6 +45,5 @@ export class CalendarComponent implements AfterViewInit {
 
   goBack(): void {
     this.router.navigate(['appointments']);
-
   }
 }

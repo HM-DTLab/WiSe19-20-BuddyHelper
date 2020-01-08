@@ -22,6 +22,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { AppointmentContactComponent } from './appointment-contact/appointment-contact.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     AdminScreenComponent,
     MainScreenComponent,
     AppointmentComponent,
-    CalendarComponent
+    CalendarComponent,
+    AppointmentContactComponent
   ],
   imports: [
     BrowserModule,
