@@ -21,7 +21,7 @@ export class ContactsComponent implements OnInit {
    return this.contactList;
 }
   goBack(): void {
-    this.router.navigate(['appointments']);
+    this.router.navigate(['main']);
   }
 
 }

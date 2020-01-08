@@ -17,7 +17,6 @@ const routes: Routes = [
   {path: 'admin-screen', component: AdminScreenComponent},
   {path: 'appointments', component: AppointmentComponent},
   {path: 'calendar', component: CalendarComponent},
-  {path: 'appointment-contact', component: AppointmentContactComponent},
   {path: 'contacts', component: ContactsComponent}
 ];
 

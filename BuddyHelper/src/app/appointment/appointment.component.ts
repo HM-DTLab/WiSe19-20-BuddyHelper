@@ -19,7 +19,7 @@ export class AppointmentComponent implements OnInit {
     this.router.navigate(['calendar']);
   }
 toContacts(): void {
-  this.router.navigate(['appointment-contact']); 
+  this.router.navigate(['contacts']); 
 }
 
 }
