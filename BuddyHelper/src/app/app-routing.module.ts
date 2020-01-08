@@ -6,6 +6,7 @@ import { AdminScreenComponent } from './admin-screen/admin-screen.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import {CalendarComponent} from './calendar/calendar.component';
 import { AppointmentContactComponent } from './appointment-contact/appointment-contact.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 
 
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path: 'admin-screen', component: AdminScreenComponent},
   {path: 'appointments', component: AppointmentComponent},
   {path: 'calendar', component: CalendarComponent},
-  {path: 'appointment-contact', component: AppointmentContactComponent}
+  {path: 'appointment-contact', component: AppointmentContactComponent},
+  {path: 'contacts', component: ContactsComponent}
 ];
 
 @NgModule({

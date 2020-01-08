@@ -15,7 +15,7 @@
         </mat-menu>
         
         <button mat-raised-button class = "buttonBar">Messages</button>
-        <button mat-raised-button class = "buttonBar">Kontakte</button>
+        <button mat-raised-button class = "buttonBar"(click)="toContacts()">Kontakte</button>
         <button mat-raised-button class = "buttonBar" (click)="toAppointments()">Termine</button>
 
         <button mat-icon-button class = "menu" [matMenuTriggerFor]="appMenu">

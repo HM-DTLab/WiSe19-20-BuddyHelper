@@ -23,6 +23,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { AppointmentContactComponent } from './appointment-contact/appointment-contact.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { AppointmentContactComponent } from './appointment-contact/appointment-c
     MainScreenComponent,
     AppointmentComponent,
     CalendarComponent,
-    AppointmentContactComponent
+    AppointmentContactComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
