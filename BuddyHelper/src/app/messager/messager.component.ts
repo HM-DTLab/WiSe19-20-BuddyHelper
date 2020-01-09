@@ -47,5 +47,9 @@ export class MessagerComponent implements OnInit {
   goTo(msg:string):void{
     alert("Konversation mit "+msg);
   }
+  help(): void {
+    alert("Ihr Notfallkontakt wurde benachrichtigt")
+
+  }
 
 }

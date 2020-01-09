@@ -28,5 +28,9 @@ export class AppointmentContactComponent implements OnInit {
   goBack(): void {
     this.router.navigate(['appointments']);
   }
+  help(): void {
+    alert("Ihr Notfallkontakt wurde benachrichtigt")
+
+  }
 
 }

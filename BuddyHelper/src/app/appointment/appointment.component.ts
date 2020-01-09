@@ -25,5 +25,9 @@ toMessages(): void {
   this.router.navigate(['messager']);
 
 }
+help(): void {
+  alert("Ihr Notfallkontakt wurde benachrichtigt")
+
+}
 
 }

@@ -21,7 +21,6 @@ export class MainScreenComponent implements OnInit {
   // Methodenstubs für weiteres Routing zu anderen Komponenten
   toMessages(): void {
     this.router.navigate(['messager']);
-
   }
 
   toContacts(): void {
@@ -33,6 +32,10 @@ export class MainScreenComponent implements OnInit {
   }
   goBack(): void {
     this.router.navigate(['appointment']);
+
+  }
+  help(): void {
+    alert("Ihr Notfallkontakt wurde benachrichtigt")
 
   }
 
