@@ -12,7 +12,12 @@
     <hr>
     <button mat-raised-button class="button">Senden</button>
     <hr>
-    <button mat-raised-button class = "buttonBar">Messages</button>
-    <button mat-raised-button class = "buttonBar">Kontakte</button>
-    <button mat-raised-button class = "buttonBar" (click) ="toMain()">Home</button>
-</form>
+   
+    <button mat-raised-button class = "buttonBar" (click)="toMain()">Home</button>
+    <button mat-raised-button class = "buttonBar" (click)="toMessages()">Kontakte</button>
+    <button mat-raised-button class = "buttonBar" (click)=toAppointments()>Termine</button>
+    <button mat-icon-button class = "menu" [matMenuTriggerFor]="appMenu">
+      <mat-icon>more_vert</mat-icon>
+  </button>
+  </form>
+</div>

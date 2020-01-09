@@ -21,5 +21,9 @@ export class AppointmentComponent implements OnInit {
 toContacts(): void {
   this.router.navigate(['contacts']); 
 }
+toMessages(): void {
+  this.router.navigate(['messager']);
+
+}
 
 }
