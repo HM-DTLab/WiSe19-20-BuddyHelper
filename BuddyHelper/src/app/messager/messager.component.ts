@@ -15,7 +15,7 @@ export class MessagerComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    this.getConversations;
+    this.getConversations();
   }
 
   // load list of current conversations
@@ -33,14 +33,13 @@ export class MessagerComponent implements OnInit {
 
   }
   toContacts(): void {
-    //this.router.navigate(['contacts']);
-
+    this.router.navigate(['contacts']);
   }
   toAppointments(): void {
     this.router.navigate(['appointments']);
   }
   toMain(): void {
-    this.router.navigate(['main-screen']); //bringt einen schritt zurück zur Main-Screen
+    this.router.navigate(['main-screen']);
   }
   toCalendar(): void {
     this.router.navigate(['calendar']);

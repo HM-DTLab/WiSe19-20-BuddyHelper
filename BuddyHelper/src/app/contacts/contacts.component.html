@@ -1,10 +1,12 @@
 <div class="standard">
-    <div class="contacts">
-      <h4>Kontakte:</h4>
     
-    <div style="white-space: pre-line;"> 
-        <span class="badge">{{getContacts()}}</span>
-    </div>
-    </div>
-    <button mat-raised-button class="button" (click)="goBack()">Zurück</button>   
-    </div>
+  <h4>Kontakte:</h4>
+  <mat-nav-list>
+    <mat-list-item *ngFor="let contact of getContacts()">
+      <button mat-icon-button>{{contact}}</button>
+    </mat-list-item>
+  </mat-nav-list>
+    
+    
+    
+<button mat-raised-button class="buttonBar" (click)="goBack()">Zurück</button>   

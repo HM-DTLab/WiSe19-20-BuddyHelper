@@ -8,20 +8,27 @@ import UserList from '../data/UserList.json';
   styleUrls: ['./contacts.component.scss']
 })
 export class ContactsComponent implements OnInit {
-  private contactList: string = ""
+  private contactList: string[] = [];
   constructor(private router: Router) {  
+    
   }
   ngOnInit() {
   }
   
-  getContacts():string {
+  getContacts():string[] {
+    // create variable to save the list in. For reasons unknown this is absolutely necessary!!!
+    var listOfNames : string[] = [];
     for (let index = 1; index < UserList.users.length; index++) {
-         this.contactList += UserList.users[index].name + "\n" + "\n";    
+      // extract name
+      var name:string = UserList.users[index].name;
+      // append name to list
+      listOfNames.push(name);
     }
-   return this.contactList;
-}
+    this.contactList=listOfNames;
+   return listOfNames;
+  }
   goBack(): void {
-    this.router.navigate(['main']);
+    this.router.navigate(['main-screen']);
   }
 
 }
