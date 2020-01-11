@@ -25,6 +25,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { AppointmentContactComponent } from './appointment-contact/appointment-contact.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     MatMenuModule,
     MatIconModule,
     MatSelectModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    FlexLayoutModule
 
   ],
   providers: [AuthService],
