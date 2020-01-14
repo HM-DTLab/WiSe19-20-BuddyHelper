@@ -82,4 +82,12 @@ Eine längerfristige Unterstützung oder Weiterentwicklung der Applikation durch
 
 ### Screenshots
 
+![Anmeldung](/Screenshots/Anmeldung.PNG "Anmeldung")
+![Registrierung](/Screenshots/Registrierung.PNG "Registrierung")
+![Hauptbildschirm](/Screenshots/Hauptbildschirm.PNG "Hauptbildschirm")
+![Message](/Screenshots/Message.PNG "Message")
+![Kontakte](/Screenshots/Kontakte.PNG "Kontakte")
+![TerminPlaner](/Screenshots/TerminPlaner.PNG "TerminPlaner")
+![Kalender](/Screenshots/Kalender.PNG "Kalender")
+
 
