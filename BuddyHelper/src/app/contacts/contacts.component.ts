@@ -37,6 +37,14 @@ export class ContactsComponent implements OnInit {
     this.router.navigate(['messager']);
 
   }
+    
+  public logout(): void {
+    this.router.navigate(['']); //Logout bringt einen zurück zur Anmeldeseite
+
+  }
+  help(){
+    alert("Ihr Hauptkontakt wurde benachrichtigt.")
+  }
 
 }
 

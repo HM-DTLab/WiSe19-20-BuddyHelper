@@ -3,10 +3,10 @@
 <form>
     <hr>
     Wählen Sie einen Termin aus
-    <button mat-raised-button class="button" (click)="toCalendar()">Termin wählen</button>
+    <button mat-raised-button class="button" (click)="toCalendar()">zum Kalender</button>
     <p></p>
     Wen möchten Sie einladen?
-    <button mat-raised-button class="button" (click) ="toContacts()">Kontakte wählen</button>
+    <button mat-raised-button class="button" (click) ="toContacts()">zu Kontakten</button>
     <hr>
     <textarea mat-form-field cols="40" placeholder="Weitere Infos/Einladungsnachricht"></textarea>
     <hr>
@@ -14,10 +14,7 @@
     <hr>
    
     <button mat-raised-button class = "buttonBar" (click)="toMain()">Home</button>
-    <button mat-raised-button class = "buttonBar" (click)="toMessages()">Kontakte</button>
-    <button mat-raised-button class = "buttonBar" (click)=toAppointments()>Termine</button>
-    <button mat-icon-button class = "menu" [matMenuTriggerFor]="appMenu">
-      <mat-icon>more_vert</mat-icon>
-  </button>
+    <button mat-raised-button class = "buttonBar" (click)="toMessages()">Message</button>
+    <button mat-raised-button class = "buttonBar" (click)="toContacts()">Kontakte</button>
   </form>
 </div>

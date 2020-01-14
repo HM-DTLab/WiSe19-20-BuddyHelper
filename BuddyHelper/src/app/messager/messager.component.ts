@@ -17,6 +17,11 @@ export class MessagerComponent implements OnInit {
   ngOnInit() {
     this.getConversations();
   }
+  
+  public logout(): void {
+    this.router.navigate(['']); //Logout bringt einen zurück zur Anmeldeseite
+
+  }
 
   // load list of current conversations
   getConversations(): string[] {

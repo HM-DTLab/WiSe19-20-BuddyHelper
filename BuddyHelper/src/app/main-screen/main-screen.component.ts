@@ -13,7 +13,7 @@ export class MainScreenComponent implements OnInit {
   ngOnInit() {
   }
 
-  logout(): void {
+  public logout(): void {
     this.router.navigate(['']); //Logout bringt einen zurück zur Anmeldeseite
 
   }

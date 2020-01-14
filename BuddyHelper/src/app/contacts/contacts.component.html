@@ -8,11 +8,17 @@
       <button mat-icon-button>{{contact}}</button>
     </mat-list-item>
   </mat-nav-list>
-    
+  
+  <mat-menu #appMenu="matMenu">
+    <button mat-menu-item>Settings</button>
+    <button mat-menu-item (click)="logout()">logout</button>
+</mat-menu>
+
   
   <button mat-raised-button class = "buttonBar" (click)="toMain()">Home</button>
-  <button mat-raised-button class = "buttonBar" (click)="toMessages()">Kontakte</button>
+  <button mat-raised-button class = "buttonBar" (click)="toMessages()">Message</button>
   <button mat-raised-button class = "buttonBar" (click)=toAppointments()>Termine</button>
+
   <button mat-icon-button class = "menu" [matMenuTriggerFor]="appMenu">
     <mat-icon>more_vert</mat-icon>
 </button>
