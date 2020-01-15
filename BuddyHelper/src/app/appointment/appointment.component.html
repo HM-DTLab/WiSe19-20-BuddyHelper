@@ -16,5 +16,8 @@
     <button mat-raised-button class = "buttonBar" (click)="toMain()">Home</button>
     <button mat-raised-button class = "buttonBar" (click)="toMessages()">Message</button>
     <button mat-raised-button class = "buttonBar" (click)="toContacts()">Kontakte</button>
+    <button mat-icon-button class = "menu" [matMenuTriggerFor]="appMenu">
+      <mat-icon>***</mat-icon>
+  </button>
   </form>
 </div>
