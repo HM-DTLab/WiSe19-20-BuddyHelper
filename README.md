@@ -81,13 +81,25 @@ Eine längerfristige Unterstützung oder Weiterentwicklung der Applikation durch
 ![Wireframes](/Wireframes/WireFrame_Gruppe7_V0801.png "Wireframes")
 
 ### Screenshots
-
+#### Anmeldung
 ![Anmeldung](/Screenshots/Anmeldung.PNG "Anmeldung")
+
+#### Registrierung
 ![Registrierung](/Screenshots/Registrierung.PNG "Registrierung")
+
+#### Hauptbildschirm
 ![Hauptbildschirm](/Screenshots/Hauptbildschirm.PNG "Hauptbildschirm")
+
+#### Messenger
 ![Message](/Screenshots/Message.PNG "Message")
+
+#### Kontakte
 ![Kontakte](/Screenshots/Kontakte.PNG "Kontakte")
+
+#### Terminplaner
 ![TerminPlaner](/Screenshots/TerminPlaner.PNG "TerminPlaner")
+
+#### Kalender
 ![Kalender](/Screenshots/Kalender.PNG "Kalender")
 
 
